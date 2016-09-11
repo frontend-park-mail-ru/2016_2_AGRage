@@ -1,0 +1,61 @@
+.firstColumn{
+	font-size: 40px;
+	border: 1px solid black;
+	height: 100%;
+}
+.secondColumn{
+	font-size: 40px;
+	border: 1px solid black;
+	height: 100%;
+}
+.thirdColumn{
+	font-size: 40px;
+	border: 1px solid black;
+	height: 100%;
+}
+.mainBody{
+	position:absolute;
+  height: 100%;
+	width: 100%;
+}
+.mainRaw{
+	height: 100%;
+}
+.mainFooter{
+	width: 100%;
+	border: 1px solid black;
+	font-size: 20px;
+	position: fixed;
+	bottom: 0%;
+}
+.b-container{
+    width:200px;
+    height:150px;
+    background-color: #ccc;
+    margin:0px auto;
+    padding:10px;
+    font-size:30px;
+    color: #fff;
+}
+.b-popup{
+		font-size: 20px;
+    width:100%;
+    min-height:100%;
+    background-color: rgba(0,0,0,0.5);
+    overflow:hidden;
+    position:fixed;
+    top:0px;
+		top:0%;
+		left:0%;
+}
+.b-popup .b-popup-content{
+    margin:40px auto 0px auto;
+    width:500px;
+    height: 300px;
+    padding:30px;
+    background-color: #c5c5c5;
+    border-radius:5px;
+    box-shadow: 0px 0px 10px #000;
+		top:70%;
+		left: 50%;
+}

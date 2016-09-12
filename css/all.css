@@ -1,3 +1,22 @@
+.registButton{
+	width: 49%;
+	position: relative;
+  float: left;
+  left: 24%;
+}
+.secondFormGroup{
+	position: static;
+}
+.firstFormGroup{
+	position:relative;
+	float: left;
+	left:25%;
+}
+.enterButton{
+	position: static;
+	width: 82px;
+	height: 82px;
+}
 .firstColumn{
 	font-size: 40px;
 	border: 1px solid black;
@@ -29,13 +48,14 @@
 	bottom: 0%;
 }
 .b-container{
-    width:200px;
+	 position: static;
+    width: relative;
     height:150px;
-    background-color: #ccc;
-    margin:0px auto;
+    /*background-color: #ccc;*/
+    margin-top: 10px;
     padding:10px;
     font-size:30px;
-    color: #fff;
+  /*  color: #fff;*/
 }
 .b-popup{
 		font-size: 20px;

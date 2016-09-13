@@ -1,8 +1,8 @@
 
-    $(document).ready(function(){
+    //$(document).ready(function(){
         //Скрыть PopUp при загрузке страницы
-        PopUpHide();
-    });
+        //PopUpHide();
+    //});
     //Функция отображения PopUp
     function PopUpShow(){
         $("#popup1").show();

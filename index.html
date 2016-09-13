@@ -17,7 +17,6 @@
         <div class="row mainRaw">
             <div class="col-md-3 firstColumn text-center">Колонка 1</div>
             <div class="col-md-6 secondColumn text-center">AGRage
-              <div class="secondFormGroup">
                 <div class="firstFormGroup" >
                 <div class="form-group">
                   <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Введите email">
@@ -25,17 +24,20 @@
                 <div class="form-group">
                   <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Введите пароль">
                 </div>
-              </div>
+
 
                 <button type="button" class="btn btn-success enterButton">Войти</button>
 
-              </div>
+
                 <div class="b-container">
                   <button onClick="javascript:PopUpShow()" type="button" class="btn btn-success registButton">Регистрация</button>
                   <!--<a href="javascript:PopUpShow()">Show popup</a>-->
                 </div>
+                </div>
                 <div class="b-popup" id="popup1">
                   <div class="b-popup-content">
+                    <!--Hide popUp function-->
+                    <script> $("#popup1").hide(); </script>
                     <form role="form">
                       <p alight="center">Форма регистрации</p>
                       <div class="form-group">
@@ -53,10 +55,12 @@
                             </label>
                       </div>
                       <button type="submit" class="btn btn-default">Зарегистрироваться</button>
+
                     </form>
                     <!--<a href="javascript:PopUpHide()">Hide popup</a>-->
                   </div>
                 </div>
+
             </div>
             <div class="col-md-3 thirdColumn text-center">Колонка 3</div>
         </div>

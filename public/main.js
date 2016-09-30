@@ -21,7 +21,7 @@
 						name: 'user',
 						type: 'text',
 						placeholder: "Enter your name",
-						maxlength: "10",
+						maxlength: "25",
 						minlength: "5",
 						required: "required"
 					},
@@ -29,7 +29,7 @@
 						name: 'email',
 						type: 'email',
 						placeholder: "Enter your email",
-						maxlength: "20",
+						maxlength: "25",
 						minlength: "5",
 						required: "required"
 					}
@@ -53,7 +53,7 @@
 						name: 'user',
 						type: 'text',
 						placeholder: "Enter your name",
-						maxlength: "10",
+						maxlength: "25",
 						minlength: "5",
 						required: "required"
 					},
@@ -67,7 +67,7 @@
 						name: 'password',
 						type: 'password',
 						placeholder: "Enter your password",
-						maxlength: "20",
+						maxlength: "25",
 						minlength: "6",
 						required: "required"
 					}

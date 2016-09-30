@@ -6,12 +6,13 @@
     let rules = window.rules;
     rules = rules.map(rule=>{
       return {
-        regexp : new RegExp(`\\b${rule}\\b`,'g'),
+        regexp : `/${rule}/g`,
         length: rule.length
       };
     })
     rules.forEach(rule=> {
-      str.replace(rule.regexp, (new Array(rule.length + 1)).join('*'))
+      str.replace(/apple//*rule.regexp*/, "*"/*(new Array(rule.length + 1)).join('*')*/)
+      console.log(str);
     });
     return (str);
   }

@@ -117,11 +117,8 @@
             this.el.addEventListener(type, callback);
         }
 
-        //TODO вернуть данные формы
         getFormData() {
-            return {
-                key: 'value'
-            };
+            return this.data;
         }
 
         install(el) {

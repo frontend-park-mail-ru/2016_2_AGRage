@@ -28,7 +28,12 @@
 		_getFields () {
 			let { fields = [] } = this.data;
 
-			return fields.map(field => { return `<input type="${field.type}" name="${field.name}" placeholder="${field.placeholder}">` }).join(' ')
+			return fields.map(field => { return `<input type="${field.type}"
+																						name="${field.name}"
+																						placeholder="${field.placeholder}"
+																						maxlength="${field.maxlength}"
+																						minlength="${field.minlength}"
+																					  ${field.required}>` }).join(' ')
 		}
 
 		/**

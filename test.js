@@ -1,5 +1,4 @@
 let assert = require('assert');
-//let hello = require('./public/main').hello;
 let filter = require('./public/components/filter').filter;
 let plural = require('./public/components/plural').plural;
 let pluralize = require('./public/components/pluralize').pluralize;
@@ -19,12 +18,13 @@ assert.equal(plural(100), 'раз');
 assert.equal(pluralize('eng', ['time', 'times'], 1), 'time');
 assert.equal(pluralize('eng', ['time', 'times'], 2), 'times');
 
-
-//assert.equal(hello('Test'), 'Привет, Test');
-//TODO: Кейсы для функции filter
-// assert.equal(filter('КЕК'), '***');
 global.window = {
 	rules: ['apple', 'orange']
 };
-//console.log(filter('apple'));
-assert.equal(filter('apple'), 'apple');
+
+assert.equal(filter('apple'), '*****');
+assert.equal(filter('appleJuice'), '*****Juice');
+assert.equal(filter('appleapple'), '**********');
+assert.equal(filter('appleorange'), '***********');
+assert.equal(filter('orangeorangeappleapple'), '**********************');
+assert.equal(filter('apple'), '*****');

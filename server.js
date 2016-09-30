@@ -6,7 +6,9 @@ let technoDoc = require('techno-gendoc');
 
 let technolibs = require('technolibs');
 
-app.use('/', express.static('public', { maxAge: 1 }));
+app.use('/', express.static('public', {
+	maxAge: 1
+}));
 technoDoc.generate(require('./api'), 'public');
 
 app.use(parser.json());
@@ -21,7 +23,7 @@ app.post('/api/messages', (req, res) => {
 	technolibs.publish(req.body).then(body => res.json(req.body));
 });
 
-app.get('/api/messages', function (req, res) {
+app.get('/api/messages', function(req, res) {
 	res.send([
 		technoDoc.mock(require('./api/scheme/Message')),
 		technoDoc.mock(require('./api/scheme/Message')),

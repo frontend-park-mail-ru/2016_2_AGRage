@@ -12,7 +12,7 @@
     })
     rules.forEach(rule=> {
       str.replace(/apple//*rule.regexp*/, "*"/*(new Array(rule.length + 1)).join('*')*/)
-      console.log(str);
+      //console.log(str);
     });
     return (str);
   }

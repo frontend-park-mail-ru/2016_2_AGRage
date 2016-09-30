@@ -1,0 +1,8 @@
+language: node_js
+node_js:
+    - 6
+
+deploy:
+  provider: heroku
+  api_key: 76c741a0-d8ac-408b-b161-0f7141536273
+  app: agrage

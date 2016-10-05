@@ -1,4 +1,4 @@
-(function () {
+(function() {
 	'use strict';
 
 	// import
@@ -8,15 +8,17 @@
 
 		/**
 		 * Конструктор класса Form
- 		 */
-		constructor (options = { data: {} }) {
+		 */
+		constructor(options = {
+			data: {}
+		}) {
 			this.data = options.data;
 			this.el = options.el;
 
 			this.render();
 		}
 
-		render () {
+		render() {
 			this._updateHtml()
 			this._installControls();
 		}
@@ -25,21 +27,25 @@
 		 * Вернуть поля формы
 		 * @return {string}
 		 */
-		_getFields () {
-			let { fields = [] } = this.data;
+		_getFields() {
+			let {
+				fields = []
+			} = this.data;
 
-			return fields.map(field => { return `<input type="${field.type}"
-																						name="${field.name}"
-																						placeholder="${field.placeholder}"
-																						maxlength="${field.maxlength}"
-																						minlength="${field.minlength}"
-																					  ${field.required}>` }).join(' ')
+			return fields.map(field => {
+				return `<input type="${field.type}"
+						name="${field.name}"
+						placeholder="${field.placeholder}"
+						maxlength="${field.maxlength}"
+						minlength="${field.minlength}"
+					 	${field.required}>`
+					}).join(' ')
 		}
 
 		/**
 		 * Обновить html компонента
 		 */
-		_updateHtml () {
+		_updateHtml() {
 			this.el.innerHTML = `
 				<form>
 					<h1>${this.data.title}</h1>
@@ -55,11 +61,15 @@
 		/**
 		 * Вставить управляющие элементы в форму
 		 */
-		_installControls () {
-			let { controls = [] } = this.data;
+		_installControls() {
+			let {
+				controls = []
+			} = this.data;
 
 			controls.forEach(data => {
-				let control = new Button({text: data.text}).render();
+				let control = new Button({
+					text: data.text
+				}).render();
 				this.el.querySelector('.js-controls').appendChild(control.el);
 			});
 		}
@@ -69,7 +79,7 @@
 		 * @param {string} type - имя события
 		 * @param {function} callback - коллбек
 		 */
-		on (type, callback) {
+		on(type, callback) {
 			this.el.addEventListener(type, callback);
 		}
 
@@ -77,7 +87,7 @@
 		 * Взять данные формы
 		 * @return {object}
 		 */
-		getFormData () {
+		getFormData() {
 			let form = this.el.querySelector('form');
 			let elements = form.elements;
 			let fields = {};

@@ -9,6 +9,7 @@ let technolibs = require('technolibs');
 app.use('/', express.static('public', {
 	maxAge: 1
 }));
+
 technoDoc.generate(require('./api'), 'public');
 
 app.use(parser.json());

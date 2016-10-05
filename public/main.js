@@ -123,6 +123,8 @@
 			event.preventDefault();
 
 			let formData = registForm.getFormData();
+			//console.log(formData);
+			console.log(JSON.stringify(formData));
 			//technolibs.request('/api/registration', formData);
 			let url = "https://backendagragegame.herokuapp.com/api/user/";
 			fetch(url, {

@@ -1,11 +1,12 @@
 {
   "name": "sample",
   "version": "1.0.0",
-  "description": "",
+  "description": "[![Build Status](https://travis-ci.org/frontend-park-mail-ru/sample.svg?branch=master)](https://travis-ci.org/frontend-park-mail-ru/sample)",
   "main": "index.js",
   "scripts": {
     "test": "node test.js",
-    "lint": "./node_modules/.bin/eslint **/*.js"
+    "lint": "eslint **/*.js",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -21,7 +22,8 @@
     "express": "^4.14.0",
     "technolibs": "1.1.0",
     "json-schema-mock": "0.0.8",
-    "techno-gendoc": "0.4.1"
+    "techno-gendoc": "0.4.1",
+    "swagger-node-express": "~2.0"
   },
   "devDependencies": {
     "eslint": "^3.6.1",
@@ -32,5 +34,10 @@
     "eslint-plugin-promise": "^2.0.1",
     "eslint-plugin-react": "6.2.2",
     "eslint-plugin-standard": "^2.0.1"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/frontend-park-mail-ru/sample/issues"
+  },
+  "homepage": "https://github.com/frontend-park-mail-ru/sample#readme",
+  "license": "ISC"
 }

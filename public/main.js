@@ -80,7 +80,7 @@
 
 			let formData = loginForm.getFormData();
 			//technolibs.request('/api/login', formData);
-			let url = "https://backendagragegame.herokuapp.com/api/user/";
+			let url = "https://backendagragegame.herokuapp.com/api/user/login/";
 			fetch(url, {
 					method: 'post',
 					headers: {
@@ -126,7 +126,7 @@
 			//console.log(formData);
 			console.log(JSON.stringify(formData));
 			//technolibs.request('/api/registration', formData);
-			let url = "https://backendagragegame.herokuapp.com/api/user/";
+			let url = "https://backendagragegame.herokuapp.com/api/user/registration/";
 			fetch(url, {
 					method: 'post',
 					headers: {

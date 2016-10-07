@@ -20,13 +20,19 @@
 			this.setAttrs(this.attrs);
 			return this;
 		}
-		
+
 		toString () {
 			return this.el.outerHTML;
 		}
 	}
 
 	//export
-	window.Button = Button;
+	if (typeof exports === "object") {
+		exports.Button = Button;
+	}
+	if (typeof window === "object"){
+		window.Button = Button;
+	}
+	//window.Button = Button;
 
 })();

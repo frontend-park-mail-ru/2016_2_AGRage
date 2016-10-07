@@ -2,8 +2,11 @@
 	'use strict';
 
 	// import
-	let Button = window.Button;
+	if (typeof window === "object"){
+		let Button = window.Button;
+	}
 
+	//slet Button  = require('../button/button.js');
 	class Chat {
 
 		/**
@@ -11,11 +14,10 @@
 		 */
 		constructor({
 			data = {},
-			el
+			el = {}
 		}) {
 			this.data = data;
 			this.el = el;
-
 			this.render();
 		}
 
@@ -58,7 +60,7 @@
 				};
 			});
 			rules.forEach(rule => {
-				str = str.replace(rule.regexp, new Array(rule.length + 1).join('0'));
+				str = str.replace(rule.regexp, new Array(rule.length + 1).join('*'));
 			});
 			return (str);
 		}
@@ -131,5 +133,13 @@
 	}
 
 	//export
-	window.Chat = Chat;
+	//export {Chat};
+	if (typeof exports === "object") {
+		exports.Chat = Chat;
+	}
+	if (typeof window === "object") {
+		window.Chat = Chat;
+	}
+	//module.exports = Chat;
+	//window.Chat = Chat;
 })();

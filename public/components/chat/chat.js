@@ -134,9 +134,9 @@
 
 	//export
 	//export {Chat};
-	if (typeof exports === "object") {
-		exports.Chat = Chat;
-	}
+	//if (typeof exports === "object") {
+	//	exports.Chat = Chat;
+	//}
 	if (typeof window === "object") {
 		window.Chat = Chat;
 	}

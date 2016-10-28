@@ -1,36 +1,18 @@
 module.exports = {
-	"env": {
-		"browser": true,
-		"commonjs": true,
-		"es6": true
-	},
-	"extends": "eslint:recommended",
-	"parserOptions": {
-		"ecmaFeatures": {
-			"jsx": true
-		},
-		"sourceType": "module"
-	},
-	"rules": {
-		"indent": [
-			"error",
-			"tab"
-		],
-		"linebreak-style": [
-			"error",
-			"unix"
-		],
-		"quotes": [
-			"error",
-			"single"
-		],
-		"semi": [
-			"error",
-			"always"
-		],
-		"no-console": 0,
-		"no-undef": 0,
-		"no-unused-vars": 0
-
-	}
+    "extends": "eslint:recommended",
+    "plugins": [
+        "import"
+    ],
+    "env": {
+        "es6": true,
+        "node": true,
+        "browser": true
+    },
+    "rules": {
+        "no-unused-vars": [1, { "vars": "all", "args": "none" }],
+        "no-extra-semi": 1,
+        "no-undef": 1,
+        "no-console": 1,
+        "no-unused-vars": 1
+    }
 };

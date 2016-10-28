@@ -3,6 +3,10 @@ body {
 	box-sizing: border-box;
 }
 
+.pink {
+	color: #fff;
+}
+
 .cssload-wrap {
 	display: flex;
 		display: -o-flex;

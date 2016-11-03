@@ -20,7 +20,7 @@
 				el: document.createElement('div'),
 				data: {
 					title: 'AGRage',
-					titleClass: "pink",
+					titleClass: "title",
 					fields: [{
 						name: 'login',
 						type: 'text',
@@ -28,7 +28,7 @@
 						maxlength: "25",
 						minlength: "5",
 						required: "required",
-						class: "pink"
+						class: "form"
 					}, {
 						name: 'password',
 						type: 'password',
@@ -36,11 +36,11 @@
 						maxlength: "25",
 						minlength: "5",
 						required: "required",
-						class: "pink"
+						class: "form"
 					}],
 					controls: [{
 						text: 'Войти',
-						class: "pink",
+						class: "loginButton",
 						attrs: {
 							type: 'submit'
 						}

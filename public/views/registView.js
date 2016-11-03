@@ -20,28 +20,33 @@
 				el: document.createElement('div'),
 				data: {
 					title: 'AGRage',
+					titleClass: "title",
 					fields: [{
 						name: 'user',
 						type: 'text',
 						placeholder: "Введите ваш логин",
 						maxlength: "25",
 						minlength: "5",
-						required: "required"
+						required: "required",
+						class: "form"
 					}, {
 						name: 'email',
 						type: 'email',
 						placeholder: "Введите ваш email",
-						required: "required"
+						required: "required",
+						class: "form"
 					}, {
 						name: 'password',
 						type: 'password',
 						placeholder: "Веедите ваш пароль",
 						maxlength: "25",
 						minlength: "6",
-						required: "required"
+						required: "required",
+						class: "form"
 					}],
 					controls: [{
 						text: 'Зарегистрироваться',
+						class: "loginButton",
 						attrs: {
 							type: 'submit'
 						}

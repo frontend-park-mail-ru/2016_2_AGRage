@@ -7,9 +7,48 @@ body {
 	color: #fff;
 	display:block;
 	margin: 10px auto;
-	width: 150px;
+	width: 200px;
+
+}
+.loginButton{
+	display:block;
+	margin: 10px auto;
+	width: 230px;
+	background-color: #d9534f;
+	border-color:#d9534f;
+}
+.loginButton:hover{
+	display:block;
+	margin: 10px auto;
+	width: 230px;
+	background-color: #d9534f;
+	border-color:#d9534f;
+}
+.title{
+	color: white;
+	display:block;
+	margin: 0 auto 30px;
+	text-align: center;
+	font-size: 60px;
+
 }
 
+.form{
+	background-color: white;
+	opacity: 0.7;
+	margin: 20px auto;
+	width: 230px;
+	border-radius:.4rem;
+}
+.bg{
+	background-image: url("Yandex-Images-2016-11-03.jpg");
+	background-size: 165%;
+	width: 400px;
+	height: 400px;
+	margin: 0 auto;
+	padding-top: 40px;
+
+}
 .cssload-wrap {
 	display: flex;
 		display: -o-flex;

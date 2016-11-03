@@ -20,6 +20,7 @@
 				el: document.createElement('div'),
 				data: {
 					title: 'AGRage',
+					titleClass: "pink",
 					fields: [{
 						name: 'login',
 						type: 'text',

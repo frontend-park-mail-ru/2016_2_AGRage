@@ -1,50 +1,68 @@
 body {
-	padding: 5vw;
+
 	box-sizing: border-box;
 }
-
+.divform{
+	width: 300px;
+	margin: 270px 10px 10px 200px;
+	background-color: ;
+}
 .pink {
 	color: #fff;
 	display:block;
-	margin: 10px auto;
 	width: 200px;
 
 }
 .loginButton{
 	display:block;
+	background-color:#337ab7;
+	border-color:#337ab7;
+	margin: auto;
+	width: 100%;
+}
+.LoginButton{
+	display:block;
+	background-color:#337ab7;
+	border-color:#337ab7;
 	margin: 10px auto;
-	width: 230px;
-	background-color: #d9534f;
-	border-color:#d9534f;
+	width: 200px;
+
+}
+.LoginButton:hover{
+	display:block;
+	background-color:#337ab7;
+	border-color:#337ab7;
+	margin: auto;
+	width: 200px;
 }
 .loginButton:hover{
 	display:block;
-	margin: 10px auto;
-	width: 230px;
-	background-color: #d9534f;
-	border-color:#d9534f;
+	width: 100%;
+	background-color:#337ab7;
+	border-color:#337ab7;
+	margin: auto;
 }
 .title{
 	color: white;
 	display:block;
-	margin: 0 auto 30px;
+	margin: 100px auto 20px;
 	text-align: center;
-	font-size: 60px;
+	font-size: 70px;
 
 }
 
 .form{
 	background-color: white;
-	opacity: 0.7;
+	opacity: 0.8;
 	margin: 20px auto;
-	width: 230px;
+
 	border-radius:.4rem;
 }
 .bg{
-	background-image: url("Yandex-Images-2016-11-03.jpg");
-	background-size: 165%;
-	width: 400px;
-	height: 400px;
+	background-image: url("I0gR3jSB7OE.jpg");
+	background-size: 100%;
+	width: 1000px;
+	height: 650px;
 	margin: 0 auto;
 	padding-top: 40px;
 

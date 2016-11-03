@@ -2,17 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="da9bb41f-f9ec-4c81-b566-520c7d9e4565" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/Yandex-Images-2016-11-03.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/file.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/I0gR3jSB7OE.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/components/form/form.tmpl.js" afterPath="$PROJECT_DIR$/public/components/form/form.tmpl.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/components/form/form.tmpl.xml" afterPath="$PROJECT_DIR$/public/components/form/form.tmpl.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/main.css" afterPath="$PROJECT_DIR$/public/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/milligram.min.css" afterPath="$PROJECT_DIR$/public/css/milligram.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/views/loginView.js" afterPath="$PROJECT_DIR$/public/views/loginView.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/views/mainView.js" afterPath="$PROJECT_DIR$/public/views/mainView.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/views/menuView.js" afterPath="$PROJECT_DIR$/public/views/menuView.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/views/registView.js" afterPath="$PROJECT_DIR$/public/views/registView.js" />
     </list>
     <ignored path="sample-lesson-6.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,27 +33,20 @@
       <file leaf-file-name="mainView.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/views/mainView.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-189">
-              <caret line="18" column="43" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
+            <state relative-caret-position="246">
+              <caret line="26" column="31" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="menuView.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="menuView.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/views/menuView.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="37" column="34" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="34" />
+            <state relative-caret-position="225">
+              <caret line="43" column="63" selection-start-line="43" selection-start-column="63" selection-end-line="43" selection-end-column="63" />
               <folding />
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Yandex-Images-2016-11-03.jpg" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/css/Yandex-Images-2016-11-03.jpg">
-          <provider selected="true" editor-type-id="images">
-            <state />
           </provider>
         </entry>
       </file>
@@ -95,8 +83,8 @@
       <file leaf-file-name="form.tmpl.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/components/form/form.tmpl.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+            <state relative-caret-position="30">
+              <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -122,11 +110,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="12" />
+            <state relative-caret-position="105">
+              <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="configView.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/views/configView.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -141,13 +139,13 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/public/css/milligram.min.css" />
-        <option value="$PROJECT_DIR$/public/components/form/form.tmpl.xml" />
         <option value="$PROJECT_DIR$/public/components/form/form.js" />
         <option value="$PROJECT_DIR$/public/views/loginView.js" />
         <option value="$PROJECT_DIR$/public/views/registView.js" />
-        <option value="$PROJECT_DIR$/public/css/main.css" />
-        <option value="$PROJECT_DIR$/public/views/mainView.js" />
         <option value="$PROJECT_DIR$/public/views/menuView.js" />
+        <option value="$PROJECT_DIR$/public/components/form/form.tmpl.xml" />
+        <option value="$PROJECT_DIR$/public/views/mainView.js" />
+        <option value="$PROJECT_DIR$/public/css/main.css" />
       </list>
     </option>
   </component>
@@ -163,8 +161,8 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="303" />
-    <option name="y" value="69" />
+    <option name="x" value="88" />
+    <option name="y" value="93" />
     <option name="width" value="1281" />
     <option name="height" value="704" />
   </component>
@@ -413,15 +411,15 @@
       <workItem from="1477603882873" duration="334000" />
       <workItem from="1477606998789" duration="218000" />
       <workItem from="1478169134368" duration="257000" />
-      <workItem from="1478177645596" duration="9467000" />
+      <workItem from="1478177645596" duration="12127000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10276000" />
+    <option name="totallyTimeSpent" value="12936000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="303" y="69" width="1281" height="704" extended-state="0" />
+    <frame x="88" y="93" width="1281" height="704" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2490242" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -578,14 +576,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/views/configView.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/css/file.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -612,14 +602,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/views/loginView.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -628,26 +610,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/components/form/form.tmpl.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
           <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/views/mainView.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-189">
-          <caret line="18" column="43" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
           <folding />
         </state>
       </provider>
@@ -662,8 +628,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/views/menuView.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="37" column="34" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="34" />
+        <state relative-caret-position="225">
+          <caret line="43" column="63" selection-start-line="43" selection-start-column="63" selection-end-line="43" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/components/form/form.tmpl.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/views/configView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/views/mainView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="26" column="31" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
           <folding />
         </state>
       </provider>

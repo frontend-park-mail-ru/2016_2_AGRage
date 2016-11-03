@@ -18,13 +18,13 @@
         createElements() {
             this.buttonLogin = new Button({
                 el: document.createElement('button'),
-				classAttrs: ['loginButton'],
+				classAttrs: ['LoginButton'],
                 text: 'ВОЙТИ',
             });
 
             this.buttonRegister = new Button({
                 el: document.createElement('button'),
-				classAttrs: ['loginButton'],
+				classAttrs: ['LoginButton'],
                 text: 'РЕГИСТРАЦИЯ',
             });
         }

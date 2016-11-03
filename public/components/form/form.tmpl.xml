@@ -1,21 +1,22 @@
 <fest:template xmlns:fest="http://fest.mail.ru" context_name="data">
 	<form class="bg">
-		<h1 class="{data.titleClass}">
-			<fest:value>data.title</fest:value>
-		</h1>
-		<div>
-			<fest:for iterate="data.fields" index="i" value="field">
-				<div class="{field.class}">
-					<input type="{field.type}" name="{field.name}" placeholder="{field.placeholder}" maxlength="{field.maxlength}" minlength="{field.minlength}" required="{field.required}"/>
-				</div>
+		<div class="divform">
+			<h1 class="{data.titleClass}">
+				<fest:value>data.title</fest:value>
+			</h1>
+			<div>
+				<fest:for iterate="data.fields" index="i" value="field">
+					<div class="{field.class}">
+						<input type="{field.type}" name="{field.name}" placeholder="{field.placeholder}" maxlength="{field.maxlength}" minlength="{field.minlength}" required="{field.required}"/>
+					</div>
+				</fest:for>
+			</div>
+
+			<fest:for iterate="data.controls" index="i" value="field">
+				<button class="{field.class}">
+					<fest:value>field.text</fest:value>
+				</button>
 			</fest:for>
 		</div>
-
-		<fest:for iterate="data.controls" index="i" value="field">
-			<button class="{field.class}">
-				<fest:value>field.text</fest:value>
-			</button>
-		</fest:for>
-
 	</form>
 </fest:template>

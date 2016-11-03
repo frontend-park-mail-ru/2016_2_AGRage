@@ -5,6 +5,9 @@ body {
 
 .pink {
 	color: #fff;
+	display:block;
+	margin: 10px auto;
+	width: 150px;
 }
 
 .cssload-wrap {

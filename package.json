@@ -7,7 +7,7 @@
     "lint": "./node_modules/.bin/eslint public/components/**/*.js",
     "fest": "./node_modules/.bin/fest-build --dir=public/components/",
 	"test": "",
-    "start": "node server.js; lint; fest;"
+    "start": "npm run fest && node server.js ;"
   },
   "repository": {
     "type": "git",

@@ -18,6 +18,7 @@
 			this.data = options.data;
 			this._el = options.el;
 			this.render();
+			console.log(this.data);
 		}
 
 		/**

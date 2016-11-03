@@ -26,17 +26,20 @@
 						placeholder: "Enter your login",
 						maxlength: "25",
 						minlength: "5",
-						required: "required"
+						required: "required",
+						class: "pink"
 					}, {
 						name: 'password',
 						type: 'password',
 						placeholder: "Enter your password",
 						maxlength: "25",
 						minlength: "5",
-						required: "required"
+						required: "required",
+						class: "pink"
 					}],
 					controls: [{
 						text: 'Войти',
+						class: "pink",
 						attrs: {
 							type: 'submit'
 						}

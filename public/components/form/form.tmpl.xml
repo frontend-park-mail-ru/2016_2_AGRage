@@ -5,14 +5,17 @@
 		</h1>
 		<div>
 			<fest:for iterate="data.fields" index="i" value="field">
+				<div class = "{field.class}">
 				<input type="{field.type}"
 					   name="{field.name}"
 					   placeholder="{field.placeholder}"
 					   maxlength ="{field.maxlength}"
 					   minlength = "{field.minlength}"
-					   required = "{field.required}"/>
+					   required = "{field.required}"
+					   />
+				</div>
 			</fest:for>
 		</div>
-		<div class="js-controls"></div>
+		<div class="{data.controls[0].class} js-controls"></div>
 	</form>
 </fest:template>

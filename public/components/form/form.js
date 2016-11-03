@@ -18,7 +18,6 @@
 			this.data = options.data;
 			this._el = options.el;
 			this.render();
-			console.log(this.data);
 		}
 
 		/**
@@ -26,7 +25,7 @@
 		 */
 		render() {
 			this._updateHtml();
-			this._installControls();
+			//this._installControls();
 		}
 
 		/**

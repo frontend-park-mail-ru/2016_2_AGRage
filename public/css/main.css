@@ -1,11 +1,9 @@
 body {
-
 	box-sizing: border-box;
 }
 .divform{
 	width: 300px;
 	margin: 270px 10px 10px 200px;
-	background-color: ;
 }
 .pink {
 	color: #fff;
@@ -55,9 +53,9 @@ body {
 	background-color: white;
 	opacity: 0.8;
 	margin: 20px auto;
-
 	border-radius:.4rem;
 }
+
 .bg{
 	background-image: url("I0gR3jSB7OE.jpg");
 	background-size: 100%;

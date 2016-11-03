@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="da9bb41f-f9ec-4c81-b566-520c7d9e4565" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/I0gR3jSB7OE.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/components/form/form.tmpl.js" afterPath="$PROJECT_DIR$/public/components/form/form.tmpl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/components/form/form.tmpl.xml" afterPath="$PROJECT_DIR$/public/components/form/form.tmpl.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/main.css" afterPath="$PROJECT_DIR$/public/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/views/mainView.js" afterPath="$PROJECT_DIR$/public/views/mainView.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/milligram.min.css" afterPath="$PROJECT_DIR$/public/css/milligram.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/views/menuView.js" afterPath="$PROJECT_DIR$/public/views/menuView.js" />
     </list>
     <ignored path="sample-lesson-6.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,11 +38,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="menuView.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="menuView.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/views/menuView.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="43" column="63" selection-start-line="43" selection-start-column="63" selection-end-line="43" selection-end-column="63" />
+            <state relative-caret-position="195">
+              <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -100,21 +98,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="form.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/components/form/form.js">
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+            <state relative-caret-position="255">
+              <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/css/main.css">
+      <file leaf-file-name="milligram.min.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/css/milligram.min.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+            <state relative-caret-position="0">
+              <caret line="9" column="6169" selection-start-line="9" selection-start-column="6169" selection-end-line="9" selection-end-column="6169" />
               <folding />
             </state>
           </provider>
@@ -138,14 +136,14 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/public/css/milligram.min.css" />
         <option value="$PROJECT_DIR$/public/components/form/form.js" />
         <option value="$PROJECT_DIR$/public/views/loginView.js" />
         <option value="$PROJECT_DIR$/public/views/registView.js" />
-        <option value="$PROJECT_DIR$/public/views/menuView.js" />
         <option value="$PROJECT_DIR$/public/components/form/form.tmpl.xml" />
         <option value="$PROJECT_DIR$/public/views/mainView.js" />
         <option value="$PROJECT_DIR$/public/css/main.css" />
+        <option value="$PROJECT_DIR$/public/css/milligram.min.css" />
+        <option value="$PROJECT_DIR$/public/views/menuView.js" />
       </list>
     </option>
   </component>
@@ -161,8 +159,8 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="88" />
-    <option name="y" value="93" />
+    <option name="x" value="157" />
+    <option name="y" value="90" />
     <option name="width" value="1281" />
     <option name="height" value="704" />
   </component>
@@ -411,15 +409,15 @@
       <workItem from="1477603882873" duration="334000" />
       <workItem from="1477606998789" duration="218000" />
       <workItem from="1478169134368" duration="257000" />
-      <workItem from="1478177645596" duration="12127000" />
+      <workItem from="1478177645596" duration="13795000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12936000" />
+    <option name="totallyTimeSpent" value="14604000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="88" y="93" width="1281" height="704" extended-state="0" />
+    <frame x="157" y="90" width="1281" height="704" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2490242" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -568,14 +566,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/milligram.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="9" column="483" selection-start-line="9" selection-start-column="483" selection-end-line="9" selection-end-column="483" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/css/file.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -626,14 +616,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/views/menuView.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="43" column="63" selection-start-line="43" selection-start-column="63" selection-end-line="43" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/components/form/form.tmpl.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -660,8 +642,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+        <state relative-caret-position="255">
+          <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/milligram.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="9" column="6169" selection-start-line="9" selection-start-column="6169" selection-end-line="9" selection-end-column="6169" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/views/menuView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
           <folding />
         </state>
       </provider>

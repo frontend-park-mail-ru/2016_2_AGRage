@@ -14,15 +14,38 @@
 			this.addListeners();
 			this.hide();
 
+			let myUrl = "http://89.19.173.36:8080/api/user/registration/"
+			fetch(myUrl, {
+					method: 'post',
+					//mode: 'cors',
+					credentials: 'include',
+					headers: {
+						"Content-type": "application/json; charset=UTF-8"
+					},
+					body: JSON.stringify({
+						"email": "maranovfna@mail.ru",
+						"login": "marianofvna",
+						"password": "12556"
+					})
+				})
+//				.then(json)
+				.then(function(data) {
+					console.log('Request succeeded with JSON response', data);
+				})
+				.catch(function(error) {
+					console.log('Request failed', error);
+				});
+
+			/*
 			let myData = {
 				email: "maranovfna@mail.ru",
 				login: "marianofvna",
 				password: "12556"
 			};
-			
+
 			let myUser = new User(myData);
 
-			myUser.sendRequest('/registration', 'POST', JSON.stringify(myData))
+			myUser.sendRequest('/registration/', 'POST', JSON.stringify(myData))
 				.then(() => {
 					console.log(myUser.responseObj.msg);
 					//document.querySelector('form.register').classList.remove('loading');
@@ -39,6 +62,7 @@
 					//});
 					console.log('Ошибка отправки запроса на сервер!');
 				});
+				*/
 		}
 
 		createElements() {

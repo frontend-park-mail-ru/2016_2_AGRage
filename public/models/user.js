@@ -53,20 +53,22 @@
         sendRequest(to, method, body = {}) {
             return new Promise((resolve, reject) => {
                 // const baseUrl = 'https://brain404-backend.herokuapp.com/api';
-                const baseUrl = 'http://89.19.173.36:8080/api/user/';
+                const baseUrl = 'http://89.19.173.36:8080/api/user';
                 const url = baseUrl + to;
-                const initPomise = {
+                const initPromise = {
                     method,
-                    mode: 'cors',
+                    mode: 'no-cors',
                     credentials: 'include',
                     headers: {
-                        'Content-type': 'application/json',
+                        'Content-Type': 'application/json;odata=verbose"',
                     },
                     body,
                 };
                 const responseObj = {};
 
-                fetch(url, initPomise)
+				console.log(initPromise);
+
+                fetch(url, initPromise)
                 .then(this.status.bind(this))
                 .then((response) => {
 					console.log(response);

@@ -4,6 +4,8 @@
 	const Button = window.Button;
 	const View = window.View;
 	const Form = window.Form;
+	const Model = window.Model;
+	const User = window.User;
 
 	class loginView extends View {
 		constructor(options = {}) {
@@ -13,6 +15,7 @@
 			this.addElements();
 			this.addListeners();
 			this.hide();
+
 		}
 
 		createElements() {

@@ -13,6 +13,32 @@
 			this.addElements();
 			this.addListeners();
 			this.hide();
+
+			let myData = {
+				email: "maranovfna@mail.ru",
+				login: "marianofvna",
+				password: "12556"
+			};
+			
+			let myUser = new User(myData);
+
+			myUser.sendRequest('/registration', 'POST', JSON.stringify(myData))
+				.then(() => {
+					console.log(myUser.responseObj.msg);
+					//document.querySelector('form.register').classList.remove('loading');
+					//this.formRegister.createMess('success', this.user.responseObj.msg);
+					//myUser.isAuth = 1;
+					//myUser.login = this.user.responseObj.msg;
+					//this.router.go('/');
+				})
+				.catch(() => {
+					//document.querySelector('form.register').classList.remove('loading');
+					//this.formRegister.createMess('error', this.user.responseObj.msg);
+					//Object.keys(this.formRegister.getFormData()).forEach((field) => {
+					//this.formRegister.el.querySelector(`input[name=${field}]`).parentNode.classList.add('error');
+					//});
+					console.log('Ошибка отправки запроса на сервер!');
+				});
 		}
 
 		createElements() {

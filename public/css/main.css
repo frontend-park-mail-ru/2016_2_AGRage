@@ -1,15 +1,70 @@
 body {
-	padding: 5vw;
 	box-sizing: border-box;
 }
-
+.divform{
+	width: 300px;
+	margin: 270px 10px 10px 200px;
+}
 .pink {
 	color: #fff;
 	display:block;
+	width: 200px;
+
+}
+.loginButton{
+	display:block;
+	background-color:#337ab7;
+	border-color:#337ab7;
+	margin: auto;
+	width: 100%;
+}
+.LoginButton{
+	display:block;
+	background-color:#337ab7;
+	border-color:#337ab7;
 	margin: 10px auto;
-	width: 150px;
+	width: 200px;
+
+}
+.LoginButton:hover{
+	display:block;
+	background-color:#337ab7;
+	border-color:#337ab7;
+	margin: auto;
+	width: 200px;
+}
+.loginButton:hover{
+	display:block;
+	width: 100%;
+	background-color:#337ab7;
+	border-color:#337ab7;
+	margin: auto;
+}
+.title{
+	color: white;
+	display:block;
+	margin: 100px auto 20px;
+	text-align: center;
+	font-size: 70px;
+
 }
 
+.form{
+	background-color: white;
+	opacity: 0.8;
+	margin: 20px auto;
+	border-radius:.4rem;
+}
+
+.bg{
+	background-image: url("I0gR3jSB7OE.jpg");
+	background-size: 100%;
+	width: 1000px;
+	height: 650px;
+	margin: 0 auto;
+	padding-top: 40px;
+
+}
 .cssload-wrap {
 	display: flex;
 		display: -o-flex;

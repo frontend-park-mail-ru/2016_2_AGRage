@@ -41,7 +41,7 @@
         }
 
         registration() {
-            this.sendRequest('/registration', 'POST', { email: this.email,
+            this.sendRequest('registration/', 'POST', { email: this.email,
                 login: this.login,
                 password: this.password });
         }
@@ -53,7 +53,7 @@
         sendRequest(to, method, body = {}) {
             return new Promise((resolve, reject) => {
                 // const baseUrl = 'https://brain404-backend.herokuapp.com/api';
-                const baseUrl = 'http://89.19.173.36:8080/api/user';
+                const baseUrl = 'http://89.19.173.36:8080/api/user/';
                 const url = baseUrl + to;
                 const initPomise = {
                     method,

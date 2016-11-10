@@ -7,10 +7,12 @@
 	const Model = window.Model;
 	const User = window.User;
 
+
 	class loginView extends View {
 		constructor(options = {}) {
 			super(options);
 			this._el = document.querySelector('.js-login');
+			this.sender = new User();
 			this.createElements();
 			this.addElements();
 			this.addListeners();
@@ -58,10 +60,23 @@
 
 		addListeners() {
 			this.loginForm._get().addEventListener('submit', event => {
-				console.log('click login');
-				this.router.go('/menu');
+				let data = this.loginForm.getFormData();
+				console.log(data);
+				console.log(this.loginForm.getFormData());
+				if(this.validation(data)){
+					console.log('click login');
+					this.sender.login(data);
+					this.router.go('/menu');
+				}
+				else {
+					alert('Неправильные ты, дядя Федор, данные вводишь!');
+				}
 			});
 
+		}
+
+		validation(data){
+			return true;
 		}
 	}
 

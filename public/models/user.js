@@ -1,124 +1,81 @@
-(function () {
-    class User {
+(function() {
+	class User {
 
-        constructor(opt) {
-            this.responseMap = {
-                200: '1',
-                400: '0',
-                401: '0',
-                403: '0',
-            };
-            this.email = opt.email || '';
-            this.login = opt.login || '';
-            this.score = opt.score || 0;
-            this.password = opt.password || '';
-            this.isAuth = opt.isAuth || 0;
-            this.responseObj = opt.responseObj || {};
-        }
+		constructor(data = {}) {
+			this.email = data.email || '';
+			this.login = data.login || '';
+			this.score = data.score || 0;
+			this.password = data.password || '';
+			this.isAuth = data.isAuth || 0;
+			this.responseObj = data.responseObj || {};
+		}
 
-        setUser(opt = {}) {
-            this.email = opt.email || '';
-            this.login = opt.login || '';
-            this.score = opt.score || 0;
-            this.password = opt.password || '';
-            this.session = opt.session || '';
-        }
+		setUser(data = {}) {
+			this.email = data.email || '';
+			this.login = data.login || '';
+			this.score = data.score || 0;
+			this.password = data.password || '';
+			this.session = data.session || '';
+		}
 
-        getUser() {
-             return { email: this.email,
-                     login: this.login,
-                     score: this.score,
-                     password: this.password,
-                     session: this.session };
-         }
+		getUser() {
+			return {
+				email: this.email,
+				login: this.login,
+				score: this.score,
+				password: this.password,
+				session: this.session
+			};
+		}
 
-        getSession() {
-            return new Promise((resolve, reject) => {
-                this.sendRequest('/session', 'GET')
-                    .then(() => { this.isAuth = 1; this.login = this.responseObj.msg; resolve(); })
-                    .catch(() => { this.isAuth = 0; resolve(); });
-            });
-        }
+		getEmail() {
+			return this.email;
+		}
 
-        registration() {
-            this.sendRequest('registration/', 'POST', { email: this.email,
-                login: this.login,
-                password: this.password });
-        }
+		getPassword() {
+			return this.email;
+		}
 
-        login() {
-            this.sendRequest('/auth', 'POST', { login: this.login, password: this.password });
-        }
+		getLogin() {
+			return this.email;
+		}
 
-        sendRequest(to, method, body = {}) {
-            return new Promise((resolve, reject) => {
-                // const baseUrl = 'https://brain404-backend.herokuapp.com/api';
-                const baseUrl = 'http://89.19.173.36:8080/api/user';
-                const url = baseUrl + to;
-                const initPromise = {
-                    method,
-                    mode: 'no-cors',
-                    credentials: 'include',
-                    headers: {
-                        'Content-Type': 'application/json;odata=verbose"',
-                    },
-                    body,
-                };
-                const responseObj = {};
 
-				console.log(initPromise);
+		registration() {
+			this.sendRequest('registration/', 'POST', {
+				email: this.email,
+				login: this.login,
+				password: this.password
+			});
+		}
 
-                fetch(url, initPromise)
-                .then(this.status.bind(this))
-                .then((response) => {
-					console.log(response);
-                    this.serverStatus(response)
-                    .then(this.toJson)
-                    .then((data) => {
-                        //console.log(data);
-                        this.responseObj = { status: 1, msg: data.login };
-                        resolve(this.responseObj);
-                    })
-                    .catch((error) => {
-                        this.toJson(error)
-                        .then((error) => {
-                            // console.log(error.msg);
-                            this.responseObj = { status: 0, msg: error.msg };
-                            reject(this.responseObj);
-                        });
-                    });
-                })
-                .catch((error) => {
-                    this.responseObj = { status: 0, msg: 'Not a server error!' };
-                    reject(this.responseObj);
-                });
-            });
-        }
+		login() {
+			this.sendRequest('/login', 'POST', {
+				login: this.login,
+				password: this.password
+			});
+		}
 
-        toJson(response) {
-            return response.json();
-        }
-
-        status(response) {
-            // console.log(response.status);
-            if (response.status in this.responseMap) {
-                // console.log('resolve');
-                return Promise.resolve(response);
-            } else {
-                // console.log('reject');
-                return Promise.reject(response);
-            }
-        }
-
-        serverStatus(response) {
-            if (this.responseMap[response.status] === '1') {
-                return Promise.resolve(response);
-            } else {
-                return Promise.reject(response);
-            }
-        }
-    }
-
-    // export
-    window.User = User;
+		sendRequest(to, curMethod, curBody = {}) {
+			const baseUrl = 'http://89.19.173.36:8080/api/user';
+			const myUrl = baseUrl + to;
+			fetch(myUrl, {
+					method: curMethod,
+					mode: 'cors',
+					credentials: 'include',
+					headers: {
+						"Content-type": "application/json; charset=UTF-8"
+					},
+					body: JSON.stringify(curBody)
+				})
+				.then(function(data) {
+					console.log('Request succeeded with JSON response', data);
+				})
+				.catch(function(error) {
+					console.log('Request failed', error);
+				});
+		}
+	}
+	// export
+	window.User = User;
 }());

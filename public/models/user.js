@@ -1,6 +1,5 @@
 (function() {
 	class User {
-
 		constructor(data = {}) {
 			this.email = data.email || '';
 			this.login = data.login || '';
@@ -49,7 +48,7 @@
 			});
 		}
 
-		login() {
+		autentification() {
 			this.sendRequest('/login', 'POST', {
 				login: this.login,
 				password: this.password
@@ -57,23 +56,30 @@
 		}
 
 		sendRequest(to, curMethod, curBody = {}) {
-			const baseUrl = 'http://89.19.173.36:8080/api/user';
-			const myUrl = baseUrl + to;
-			fetch(myUrl, {
-					method: curMethod,
-					mode: 'cors',
-					credentials: 'include',
-					headers: {
-						"Content-type": "application/json; charset=UTF-8"
-					},
-					body: JSON.stringify(curBody)
-				})
-				.then(function(data) {
-					console.log('Request succeeded with JSON response', data);
-				})
-				.catch(function(error) {
-					console.log('Request failed', error);
-				});
+			return new Promise((resolve, reject) => {
+				//let responseObj = {};
+				const baseUrl = 'http://89.19.173.36:8080/api/user';
+				const myUrl = baseUrl + to;
+				fetch(myUrl, {
+						method: curMethod,
+						mode: 'cors',
+						credentials: 'include',
+						headers: {
+							"Content-type": "application/json; charset=UTF-8"
+						},
+						body: JSON.stringify(curBody)
+					})
+					.then(function(data) {
+						console.log('Request succeeded with JSON response', data);
+						let responseObj = { status: data.status};
+						resolve(responseObj);
+					})
+					.catch(function(error) {
+						console.log('Request failed', error);
+						let responseObj = { status: 0};
+						reject(responseObj);
+					});
+			})
 		}
 	}
 	// export

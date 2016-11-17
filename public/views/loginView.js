@@ -12,7 +12,6 @@
 		constructor(options = {}) {
 			super(options);
 			this._el = document.querySelector('.js-login');
-			this.sender = new User();
 			this.createElements();
 			this.addElements();
 			this.addListeners();
@@ -60,13 +59,21 @@
 
 		addListeners() {
 			this.loginForm._get().addEventListener('submit', event => {
+				event.preventDefault();
 				let data = this.loginForm.getFormData();
-				console.log(data);
-				console.log(this.loginForm.getFormData());
+				this.sender = new User(data);
 				if(this.validation(data)){
 					console.log('click login');
-					this.sender.login(data);
-					this.router.go('/menu');
+					//this.sender.autentification();
+					this.sender.sendRequest('/login', 'POST', JSON.stringify(data))
+						.then((responseObj) => {
+							console.log(responseObj);
+	                        this.sender.isAuth = 1;
+	                        this.router.go('/menu');
+	                    })
+						.catch(() => {
+							console.log('ЖОПА!!!');
+						})
 				}
 				else {
 					alert('Неправильные ты, дядя Федор, данные вводишь!');

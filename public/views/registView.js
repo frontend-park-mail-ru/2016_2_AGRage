@@ -6,8 +6,6 @@
 	const Form = window.Form;
 	const Model = window.Model;
 
-	let sender = new Model();
-
 	class registerView extends View {
 		constructor(options = {}) {
 			super(options);
@@ -65,11 +63,22 @@
 
 		addListeners() {
 			this.registForm._get().addEventListener('submit', event => {
+				event.preventDefault();
 				let data = this.registForm.getFormData();
+				this.sender = new User(data);
 				if(this.validation(data)){
 					console.log('click registration');
-					this.sender.login(data);
-					this.router.go('/menu');
+					this.sender.sendRequest('/registration/', 'POST', JSON.stringify(data))
+						.then((responseObj) => {
+							console.log(responseObj);
+							if (responseObj == 200){
+	                        	this.sender.isAuth = 1;
+	                        	this.router.go('/menu');
+							}
+	                    })
+						.catch(() => {
+							console.log('ЖОПА!!!');
+						})
 				}
 				else {
 					alert('Неправильные ты, дядя Федор, данные вводишь!');

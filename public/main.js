@@ -11,6 +11,7 @@
 	const ratingView = window.ratingView;
 	const configView = window.configView;
 	const profileView = window.profileView;
+	const gameView = window.gameView;
 
 
 	// TIP: роуты нужно указывать от наиболее специфичного к наименее специфичному
@@ -24,6 +25,7 @@
 		.addRoute('/rating',ratingView)
 		.addRoute('/profile',profileView)
 		.addRoute('/config',configView)
+		.addRoute('/game',gameView)
 
 		.addRoute('/', mainView)
 

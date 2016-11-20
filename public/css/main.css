@@ -73,6 +73,11 @@ canvas {
     padding-top: 40px;
 }
 
+.gamebg{
+    background-image: url("background.jpg");
+    background-size: 100%;
+}
+
 .cssload-wrap {
     display: flex;
     display: -o-flex;

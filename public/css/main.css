@@ -1,9 +1,17 @@
 body {
-    box-sizing: border-box;
+/* box-sizing: border-box; */
+    height: 100%;
+    width: 100%;
+}
+canvas {
+    /* border: 1px solid #000; */
 }
 
-canvas {
-    border: 1px solid #000;
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    height: 100%;
+    width: 100%;
 }
 
 .divform {
@@ -73,9 +81,11 @@ canvas {
     padding-top: 40px;
 }
 
-.gamebg{
-    background-image: url("background.jpg");
+.gamebg {
+    background: url(background.jpg) no-repeat;
     background-size: 100%;
+    height: 100%;
+    width: 100%;
 }
 
 .cssload-wrap {

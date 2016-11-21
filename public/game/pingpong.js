@@ -15,6 +15,7 @@
 			this.width = width;
 			this.height = height;
 
+			this.getGameFieldSize();
 			this.ball = new Ball({});
 			this.readyToShot = true;
 			this.bullets = [];
@@ -25,6 +26,11 @@
 		/**
 		 * Начало новой игры
 		 */
+		getGameFieldSize(){
+			let field = document.getElementsByClassName("gamebg");
+			//field[0].style.height();
+			console.log(field[0].style.height());
+		}
 		start () {
 			this._stopped = false;
 			this.key.init();

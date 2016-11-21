@@ -6,7 +6,7 @@
 		/**
 		 * Конструктор класса Ball
 		 */
-		constructor ({x = 100, y = 280, color = '#0095DD', vx = 0}) {
+		constructor ({x = window.innerHeight/10, y = window.innerHeight/2, color = '#0095DD', vx = 0}) {
 			this.vx = vx;
 			this.x = x;
 			this.y = y;
@@ -34,7 +34,7 @@
 			} */
 
 			this[action](result);
-		} 
+		}
 
 
 
@@ -62,7 +62,7 @@
 			//var canvas = document.getElementById("canvas");
 			//var image = document.getElementById("unit1.png");
 			var image = new Image();
-			image.src = "unit1.png"; 
+			image.src = "unit1.png";
 
 			ctx.drawImage(image, this.x, this.y, 100, 100);
 			ctx.closePath();

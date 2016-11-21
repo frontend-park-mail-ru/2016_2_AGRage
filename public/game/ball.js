@@ -6,7 +6,7 @@
 		/**
 		 * Конструктор класса Ball
 		 */
-		constructor ({x = 100, y = 280, color = '#0095DD', vx = 0}) {
+		constructor ({x = 100, y = 300, color = '#0095DD', vx = 0}) {
 			this.vx = vx;
 			this.x = x;
 			this.y = y;
@@ -26,7 +26,7 @@
 
 		checkRectangleIntersection ({width, height}, action = 'relect') {
 			let result = {};
-			if (this.x + 100 > width || this.x - 100 < 0) {
+			if (this.x + 100 > width || this.x < 0) {
 				result.x = true;			}
 
 			/* if (this.y + this.r > height || this.y - this.r < 0) {

@@ -2,6 +2,8 @@ body {
 /* box-sizing: border-box; */
     height: 100%;
     width: 100%;
+    margin: 0;
+
 }
 canvas {
     /* border: 1px solid #000; */
@@ -84,8 +86,13 @@ html {
 .gamebg {
     background: url(background.jpg) no-repeat;
     background-size: 100%;
-    height: 100%;
-    width: 100%;
+    /* height: 100%;
+    width: 100%; */
+    width: 1280px;
+    height: 720px;
+    margin-top: 40px;
+    margin: 0 auto;
+    /* padding-top: 40px; */
 }
 
 .cssload-wrap {

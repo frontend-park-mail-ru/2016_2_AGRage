@@ -1,11 +1,11 @@
 (function () {
 	'use strict';
 
-	const Ball = window.Ball;
-	const Pane = window.Pane;
+	const Unit1 = window.Unit1;
 	const keyMaster = window.keyMaster;
+	const Tower = window.Tower;
 
-	class pingPong {
+	class Tower_defence {
 
 		/**
 		 * Конструктор класса Form
@@ -15,7 +15,9 @@
 			this.width = width;
 			this.height = height;
 
-			this.ball = new Ball({});
+			this.unit1 = new Unit1({});
+			this.tower = new Tower({});
+
 			this.readyToShot = true;
 			this.bullets = [];
 
@@ -81,14 +83,15 @@
 				bullet.draw(this.ctx);
 			});
 
-			this.ball.update(dt);
+			this.unit1.update(dt);
 			this.checkControl();
-			this.ball.checkRectangleIntersection({
+			this.unit1.checkRectangleIntersection({
 				width: this.width,
 				height: this.height
 			}, 'reflect');
 
-		    this.ball.draw(this.ctx);
+		    this.unit1.draw(this.ctx);
+		    this.tower.draw(this.ctx);
 			this.collectGarbage();
 		}
 
@@ -106,13 +109,13 @@
 			}
 
 			this.readyToShot = false;
-			this.bullets.push(new Ball({
+			this.bullets.push(new Unit1({
 				color: '#' + technolibs.colorHash('bullet' + Date.now()),
 				r: 10,
-				x: this.ball.x,
-				y: this.ball.y,
-				vx: this.ball.vx * 5,
-				vy: this.ball.vy * 5
+				x: this.unit1.x,
+				y: this.unit1.y,
+				vx: this.unit1.vx * 5,
+				vy: this.unit1.vy * 5
 			}));
 
 			setTimeout(() => this.readyToShot = true, 300);
@@ -120,19 +123,19 @@
 
 		checkControl () {
 			if (this.key.is('w')) {
-				this.ball.dv({vy: -0.01});
+				this.unit1.dv({vy: -0.01});
 			}
 
 			if (this.key.is('s')) {
-				this.ball.dv({vy: 0.01});
+				this.unit1.dv({vy: 0.01});
 			}
 
 			if (this.key.is('d')) {
-				this.ball.dv({vx: 0.01});
+				this.unit1.dv({vx: 0.01});
 			}
 
 			if (this.key.is('a')) {
-				this.ball.dv({vx: -0.01});
+				this.unit1.dv({vx: -0.01});
 			}
 
 			if (this.key.is(' ')) {
@@ -143,5 +146,5 @@
 	}
 
 	//export
-	window.pingPong = pingPong;
+	window.Tower_defence = Tower_defence;
 })();

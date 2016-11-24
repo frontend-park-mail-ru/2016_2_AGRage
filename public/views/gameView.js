@@ -3,7 +3,7 @@
 
 	const View = window.View;
 	const Form = window.Form;
-	const pingPong = window.pingPong;
+	const Tower_defence = window.Tower_defence;
 
 	class gameView extends View {
 		constructor(options = {}) {
@@ -24,7 +24,7 @@
 			super.resume();
 			this._initCanvas();
 
-			this._game = new pingPong({
+			this._game = new Tower_defence({
 				ctx: this.canvas.getContext('2d'),
 				width: +this.canvas.width,
 				height: +this.canvas.height

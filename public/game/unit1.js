@@ -1,20 +1,18 @@
 (function () {
 	'use strict';
 
-	class Ball {
+	class Unit1 {
 
 		/**
-		 * Конструктор класса Ball
+		 * Конструктор класса Unit1
 		 */
-		constructor ({x = 100, y = 300, color = '#0095DD', vx = 0}) {
+		constructor ({x = 100, y = 300, vx = 0}) {
 			this.vx = vx;
 			this.x = x;
 			this.y = y;
-
-			this.color = color;
 		}
 
-		dv ({vx = 0, vy = 0}) {
+		dv ({vx = 0}) {
 			this.vx += vx;
 			//this.vy += vy;
 		}
@@ -72,5 +70,5 @@
 	}
 
 	//export
-	window.Ball = Ball;
+	window.Unit1 = Unit1;
 })();

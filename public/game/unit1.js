@@ -1,4 +1,4 @@
-<<<<<<< HEAD:public/game/unit1.js
+
 (function () {
 	'use strict';
 
@@ -37,11 +37,11 @@
 
 
 
-		destroy (axis) {
-			if (axis.x || axis.y) {
-				this.toDestroy = true;
-			}
-		}
+		// destroy (axis) {
+		// 	if (axis.x || axis.y) {
+		// 		this.toDestroy = true;
+		// 	}
+		// }
 
 		reflect (axis) {
 			Object.keys(axis).forEach(dem => {
@@ -73,5 +73,3 @@
 	//export
 	window.Unit1 = Unit1;
 })();
-=======
->>>>>>> 46e76a6c1aa50932089200f6e7951b13ee35e1fd:public/game/ball.js

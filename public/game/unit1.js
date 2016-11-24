@@ -23,7 +23,7 @@
 			//this.y += this.vy * dt;
 		}
 
-		checkRectangleIntersection ({width, height}, action = 'relect') {
+		checkRectangleIntersection ({width, height}, action = 'reflect') {
 			let result = {};
 			if (this.x + 100 > width || this.x < 0) {
 				result.x = true;			}
@@ -37,11 +37,11 @@
 
 
 
-		// destroy (axis) {
-		// 	if (axis.x || axis.y) {
-		// 		this.toDestroy = true;
-		// 	}
-		// }
+		destroy (axis) {
+			if (axis.x || axis.y) {
+				this.toDestroy = true;
+			}
+		}
 
 		reflect (axis) {
 			Object.keys(axis).forEach(dem => {

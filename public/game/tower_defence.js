@@ -15,9 +15,14 @@
 			this.width = width;
 			this.height = height;
 
+<<<<<<< HEAD:public/game/tower_defence.js
 			this.unit1 = new Unit1({});
 			this.tower = new Tower({});
 
+=======
+			this.getGameFieldSize();
+			this.ball = new Ball({});
+>>>>>>> 46e76a6c1aa50932089200f6e7951b13ee35e1fd:public/game/pingpong.js
 			this.readyToShot = true;
 			this.bullets = [];
 
@@ -27,6 +32,11 @@
 		/**
 		 * Начало новой игры
 		 */
+		getGameFieldSize(){
+			let field = document.getElementsByClassName("gamebg");
+			//field[0].style.height();
+			console.log(field[0].style.height());
+		}
 		start () {
 			this._stopped = false;
 			this.key.init();

@@ -1,3 +1,4 @@
+<<<<<<< HEAD:public/game/unit1.js
 (function () {
 	'use strict';
 
@@ -72,3 +73,5 @@
 	//export
 	window.Unit1 = Unit1;
 })();
+=======
+>>>>>>> 46e76a6c1aa50932089200f6e7951b13ee35e1fd:public/game/ball.js

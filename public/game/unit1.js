@@ -33,7 +33,7 @@
 			} */
 
 			this[action](result);
-		} 
+		}
 
 
 
@@ -61,7 +61,7 @@
 			//var canvas = document.getElementById("canvas");
 			//var image = document.getElementById("unit1.png");
 			var image = new Image();
-			image.src = "unit1.png"; 
+			image.src = "unit1.png";
 
 			ctx.drawImage(image, this.x, this.y, 100, 100);
 			ctx.closePath();

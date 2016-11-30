@@ -27,11 +27,7 @@
 		/**
 		 * Начало новой игры
 		 */
-		getGameFieldSize(){
-			let field = document.getElementsByClassName("gamebg");
-			//field[0].style.height();
-			console.log(field[0].style.height());
-		}
+		
 		start () {
 			this._stopped = false;
 			this.key.init();
@@ -94,6 +90,13 @@
 				width: this.width,
 				height: this.height
 			}, 'reflect');
+
+			//if(this.tower.checkNull()){
+			this.tower.checkRectangleIntersection({
+					width: this.width,
+					height: this.height
+				}, 'reflect', this.unit1.coordinate());
+			//}
 
 		    this.unit1.draw(this.ctx);
 		    this.tower.draw(this.ctx);

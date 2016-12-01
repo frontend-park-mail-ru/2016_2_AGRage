@@ -25,17 +25,15 @@
 
 		checkRectangleIntersection ({width, height}, action = 'reflect') {
 			let result = {};
-			if (this.x + 100 > width || this.x < 0) {
+			if (this.x + 280 > width || this.x < 0) {
 				result.x = true;			}
-
-			/* if (this.y + this.r > height || this.y - this.r < 0) {
-				result.y = true;
-			} */
 
 			this[action](result);
 		}
 
-
+		coordinate (){
+			return this.x;
+		}
 
 		destroy (axis) {
 			if (axis.x || axis.y) {
@@ -46,7 +44,7 @@
 		reflect (axis) {
 			Object.keys(axis).forEach(dem => {
 				if (axis[dem]) {
-					this[`v${dem}`] *= -1;
+					this[`v${dem}`] *= 0;
 				}
 			})
 		}

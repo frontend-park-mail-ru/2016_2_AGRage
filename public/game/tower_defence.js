@@ -91,15 +91,17 @@
 				height: this.height
 			}, 'reflect');
 
-			//if(this.tower.checkNull()){
+			
 			this.tower.checkRectangleIntersection({
 					width: this.width,
 					height: this.height
 				}, 'reflect', this.unit1.coordinate());
-			//}
+			
 
 		    this.unit1.draw(this.ctx);
 		    this.tower.draw(this.ctx);
+		    this.tower.drawHp(this.ctx);
+		   
 			this.collectGarbage();
 		}
 

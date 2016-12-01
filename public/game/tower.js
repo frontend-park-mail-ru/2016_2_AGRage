@@ -21,7 +21,9 @@
 			}
 			else if (coord + 280 > width || coord < 0) {
 				result.x = true;	
-				this.hp -= 100;		
+				this.hp -= 100;	
+				
+				console.log(this.hp);	
 			}
 			else result.x = false;
 
@@ -32,11 +34,13 @@
 			// if(this.hp < 0){
 			// 	result.x = false;
 			// }
-			console.log(this.hp);
+			
 			this[action](result);
 		}
 
-
+		getHp(){
+			return this.hp;
+		}
 
 		// checkNull(){
 		// 	if(this.hp == 0){
@@ -71,6 +75,11 @@
 			ctx.closePath();
 		}
 
+		drawHp(ctx){
+
+			ctx.fillStyle = "red";
+			ctx.fillRect(1140, 20, (this.hp / 10), 20);
+		}
 
 	}
 

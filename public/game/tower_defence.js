@@ -55,7 +55,7 @@
 				if (!isStopped()) {
 					requestAnimationFrame(step);
 				}
-
+				//console.log(dt);
 				exec(dt);
 			}
 
@@ -84,6 +84,7 @@
 				bullet.draw(this.ctx);
 			});
 
+			this.tower.incrementCounter(dt);
 			this.unit1.update(dt);
 			this.checkControl();
 			this.unit1.checkRectangleIntersection({

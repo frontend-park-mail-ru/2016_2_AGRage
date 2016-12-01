@@ -6,26 +6,32 @@
 		/**
 		 * Конструктор класса Tower
 		 */
-		constructor ({x = 1100, y = 60, hp =1000}) {
+		constructor ({x = 1100, y = 60, hp =1000, counter = 0}) {
 			this.x = x;
 			this.y = y;
 			this.hp = hp;
+			this.counter = counter;
 		}
 
 
 		checkRectangleIntersection ({width, height}, action = 'reflect', coord) {
 			let result = {};
 			
-			if(this.hp == 0){
-				result.x = false;
-			}
-			else if (coord + 280 > width || coord < 0) {
-				result.x = true;	
-				this.hp -= 100;	
+			if(this.counter >= 2000){
+				if(this.hp == 0){
+					result.x = false;
+				}
+				else if (coord + 280 > width || coord < 0) {
+					result.x = true;	
+					this.hp -= 100;	
+					//this.update(2000);
 				
-				console.log(this.hp);	
+					console.log(this.hp);	
+				}
+				else result.x = false;
+				
+				this.counter = 0;
 			}
-			else result.x = false;
 
 			// if (coord + 280 > width || coord < 0) {
 			// 	result.x = true;	
@@ -81,6 +87,18 @@
 			ctx.fillRect(1140, 20, (this.hp / 10), 20);
 		}
 
+		update (dt) {
+			this.hp -= 0.01 * dt;
+			//this.y += this.vy * dt;
+		}
+
+		incrementCounter(dt){
+			this.counter += dt;
+		}
+
+		getCounter(){
+			return this.counter;
+		}
 	}
 
 	//export

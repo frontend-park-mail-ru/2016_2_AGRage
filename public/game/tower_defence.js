@@ -5,6 +5,7 @@
 	const keyMaster = window.keyMaster;
 	const Tower = window.Tower;
 
+
 	class Tower_defence {
 
 		/**
@@ -27,7 +28,7 @@
 		/**
 		 * Начало новой игры
 		 */
-		
+
 		start () {
 			this._stopped = false;
 			this.key.init();
@@ -86,23 +87,26 @@
 
 			this.tower.incrementCounter(dt);
 			this.unit1.update(dt);
+			this.unit1.sprite.update(dt);
+
 			this.checkControl();
 			this.unit1.checkRectangleIntersection({
 				width: this.width,
 				height: this.height
 			}, 'reflect');
 
-			
+
 			this.tower.checkRectangleIntersection({
 					width: this.width,
 					height: this.height
 				}, 'reflect', this.unit1.coordinate());
-			
+
+
 
 		    this.unit1.draw(this.ctx);
 		    this.tower.draw(this.ctx);
 		    this.tower.drawHp(this.ctx);
-		   
+
 			this.collectGarbage();
 		}
 

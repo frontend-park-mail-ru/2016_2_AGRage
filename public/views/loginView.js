@@ -66,7 +66,7 @@
 					console.log('click login');
 					//this.sender.autentification();
 					//this.sender.sendRequest('/login', 'POST', JSON.stringify(data))
-					this.sender.autentification(()
+					this.sender.autentification()
 						.then((responseObj) => {
 							console.log(responseObj);
 	                        this.sender.isAuth = 1;

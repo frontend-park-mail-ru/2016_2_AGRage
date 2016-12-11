@@ -41,7 +41,7 @@
 
 
 		registration() {
-			this.sendRequest('registration/', 'POST', {
+			return this.sendRequest('registration/', 'POST', {
 				login: this.login,
 				password: this.password,
 				email: this.email

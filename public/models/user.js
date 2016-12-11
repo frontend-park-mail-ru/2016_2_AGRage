@@ -49,7 +49,7 @@
 		}
 
 		autentification() {
-			return this.sendRequest('/login', 'POST', {
+			return this.sendRequest('login/', 'POST', {
 				login: this.login,
 				password: this.password
 			});
@@ -59,7 +59,7 @@
 			return new Promise((resolve, reject) => {
 				//let responseObj = {};
 				console.log(curBody);
-				const baseUrl = 'https://agragebackend.herokuapp.com/api/user';
+				const baseUrl = 'https://agragebackend.herokuapp.com/api/user/';
 				const myUrl = baseUrl + to;
 				fetch(myUrl, {
 						method: curMethod,

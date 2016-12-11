@@ -63,12 +63,10 @@
 				let data = this.loginForm.getFormData();
 				this.sender = new User(data);
 				if (this.validation(data)) {
-					console.log('click login');
 					//this.sender.autentification();
 					//this.sender.sendRequest('/login', 'POST', JSON.stringify(data))
 					this.sender.autentification()
 						.then((responseObj) => {
-							console.log(responseObj);
 							if (responseObj.status == 200) {
 								this.sender.isAuth = 1;
 								this.router.go('/menu');

@@ -58,6 +58,7 @@
 		sendRequest(to, curMethod, curBody = {}) {
 			return new Promise((resolve, reject) => {
 				//let responseObj = {};
+				console.log(curBody);
 				const baseUrl = 'https://agragebackend.herokuapp.com/api/user';
 				const myUrl = baseUrl + to;
 				fetch(myUrl, {

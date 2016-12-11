@@ -43,8 +43,8 @@
 		registration() {
 			this.sendRequest('registration/', 'POST', {
 				login: this.login,
-				email: this.email,
-				password: this.password
+				password: this.password,
+				email: this.email
 			});
 		}
 

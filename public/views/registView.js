@@ -24,7 +24,7 @@
 					title: 'AGRage',
 					titleClass: "title",
 					fields: [{
-						name: 'user',
+						name: 'login',
 						type: 'text',
 						placeholder: "Введите ваш логин",
 						maxlength: "25",

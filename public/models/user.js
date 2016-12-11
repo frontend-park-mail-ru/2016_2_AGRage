@@ -58,7 +58,6 @@
 		sendRequest(to, curMethod, curBody = {}) {
 			return new Promise((resolve, reject) => {
 				//let responseObj = {};
-				console.log(curBody);
 				const baseUrl = 'https://agragebackend.herokuapp.com/api/user/';
 				const myUrl = baseUrl + to;
 				fetch(myUrl, {
@@ -71,7 +70,6 @@
 						body: JSON.stringify(curBody)
 					})
 					.then(function(data) {
-						console.log('Request succeeded with JSON response', data);
 						let responseObj = { status: data.status};
 						resolve(responseObj);
 					})

@@ -67,11 +67,9 @@
 				let data = this.registForm.getFormData();
 				this.sender = new User(data);
 				if(this.validation(data)){
-					console.log('click registration');
 					//this.sender.sendRequest('/registration/', 'POST', JSON.stringify(data))
 					this.sender.registration()
 						.then((responseObj) => {
-							console.log(responseObj);
 							if (responseObj.status == 200){
 	                        	this.sender.isAuth = 1;
 	                        	this.router.go('/menu');

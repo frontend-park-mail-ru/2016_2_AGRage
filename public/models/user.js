@@ -58,7 +58,7 @@
 		sendRequest(to, curMethod, curBody = {}) {
 			return new Promise((resolve, reject) => {
 				//let responseObj = {};
-				const baseUrl = 'http://89.19.173.36:8080/api/user';
+				const baseUrl = 'https://agragebackend.herokuapp.com/api/user';
 				const myUrl = baseUrl + to;
 				fetch(myUrl, {
 						method: curMethod,

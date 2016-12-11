@@ -72,7 +72,7 @@
 					this.sender.registration()
 						.then((responseObj) => {
 							console.log(responseObj);
-							if (responseObj == 200){
+							if (responseObj.status == 200){
 	                        	this.sender.isAuth = 1;
 	                        	this.router.go('/menu');
 							}

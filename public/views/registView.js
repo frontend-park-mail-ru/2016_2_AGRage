@@ -68,7 +68,8 @@
 				this.sender = new User(data);
 				if(this.validation(data)){
 					console.log('click registration');
-					this.sender.sendRequest('/registration/', 'POST', JSON.stringify(data))
+					//this.sender.sendRequest('/registration/', 'POST', JSON.stringify(data))
+					this.sender.registration()
 						.then((responseObj) => {
 							console.log(responseObj);
 							if (responseObj == 200){

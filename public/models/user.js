@@ -49,7 +49,7 @@
 		}
 
 		autentification() {
-			this.sendRequest('/login', 'POST', {
+			return this.sendRequest('/login', 'POST', {
 				login: this.login,
 				password: this.password
 			});

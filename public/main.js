@@ -27,8 +27,11 @@
 		.addRoute('/config',configView)
 		.addRoute('/game',gameView)
 
+
 		.addRoute('/', mainView)
 
 		.start();
+
 	//dfffff
+
 })();

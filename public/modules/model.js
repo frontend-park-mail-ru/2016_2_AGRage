@@ -1,8 +1,6 @@
 (function () {
 	'use strict';
-
 	class Model {
-
 		constructor(attributes = {}) {
 			Object.keys(attributes).forEach(key => {
 				if (attributes[key] === undefined) {
@@ -11,6 +9,7 @@
 			})
 			this.attributes = Object.assign({}, this.defaults, attributes);
 		}
+<<<<<<< HEAD
 
 		get defaults() {
 			return {};

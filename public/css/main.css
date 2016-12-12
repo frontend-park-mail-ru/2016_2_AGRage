@@ -95,6 +95,10 @@ html {
     /* padding-top: 40px; */
 }
 
+.pink {
+	color: #fff;
+}
+
 .cssload-wrap {
     display: flex;
     display: -o-flex;

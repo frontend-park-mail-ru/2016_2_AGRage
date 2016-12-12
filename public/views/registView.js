@@ -5,7 +5,6 @@
 	const View = window.View;
 	const Form = window.Form;
 	const Model = window.Model;
-
 	class registerView extends View {
 		constructor(options = {}) {
 			super(options);

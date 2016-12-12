@@ -14,6 +14,7 @@
 	const gameView = window.gameView;
 
 
+
 	// TIP: роуты нужно указывать от наиболее специфичного к наименее специфичному
 	// З.Ы. чтобы более ранние роуты не были префиксами более поздних ;]
 	(new Router)
@@ -27,8 +28,9 @@
 		.addRoute('/config',configView)
 		.addRoute('/game',gameView)
 
+
 		.addRoute('/', mainView)
 
 		.start();
-	//dfffff
+
 })();

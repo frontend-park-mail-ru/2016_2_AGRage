@@ -1,3 +1,4 @@
+
 (function() {
 	class User {
 		constructor(data = {}) {

@@ -16,7 +16,6 @@
 			this.addElements();
 			this.addListeners();
 			this.hide();
-
 		}
 
 		createElements() {
@@ -33,6 +32,7 @@
 						minlength: "5",
 						required: "required",
 						class: "form"
+
 					}, {
 						name: 'password',
 						type: 'password',

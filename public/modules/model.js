@@ -48,6 +48,7 @@
 
 	}
 
+
 	// export
 	window.Model = Model;
 })();

@@ -17,24 +17,24 @@
         createElements() {
             this.buttonSearchGame = new Button({
                 el: document.createElement('button'),
-				classAttrs: ['pink'],
+				classAttrs: ['LoginButton'],
                 text: 'поиск игры',
             });
 
             this.buttonRating = new Button({
                 el: document.createElement('button'),
-				classAttrs: ['pink'],
+				classAttrs: ['LoginButton'],
                 text: 'общий рейтинг',
             });
 			this.buttonUserProfile = new Button({
 				el: document.createElement('button'),
-				classAttrs: ['pink'],
+				classAttrs: ['LoginButton'],
 				text: 'профиль',
 			});
 
 			this.buttonConfig = new Button({
 				el: document.createElement('button'),
-				classAttrs: ['pink'],
+				classAttrs: ['LoginButton'],
 				text: 'настройки',
 			});
         }

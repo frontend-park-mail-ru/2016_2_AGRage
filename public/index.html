@@ -14,26 +14,31 @@
 <body>
 
 	<div class="js-main"></div>
-	<div class="js-login" hidden="hidden"></div>
-	<div class="js-regist" hidden="hidden"></div>
+	<div class="js-login bg" hidden="hidden"></div>
+	<div class="js-regist bg" hidden="hidden"></div>
 	<div class="js-chat" hidden="hidden"></div>
 	<div class="js-menu" hidden="hidden"></div>
 	<div class="js-config" hidden="hidden"></div>
 	<div class="js-profile" hidden="hidden"></div>
 	<div class="js-searchGame" hidden="hidden"></div>
 	<div class="js-rating" hidden="hidden"></div>
-
+	<div class="js-game gamebg" id="myGame" hidden="hidden">
+		<canvas class="js-canvas"></canvas>
+	</div>
+	<script src="/game/sprite.js"></script>
 	<script src="/libs/technolibs/index.js"></script>
 	<script src="/modules/pathToRegex.js"></script>
 	<script src="/modules/view.js"></script>
 	<script src="/modules/model.js"></script>
 	<script src="/modules/route.js"></script>
 	<script src="/modules/router.js"></script>
+	<script src="/game/keymaster.js"></script>
+	<script src="/game/unit1.js"></script>
+	<script src="/game/tower.js"></script>
+	<script src="/game/tower_defence.js"></script>
 
 	<!-- <script src="/models/message.js"></script> -->
-	<!-- <script src="/models/user.js"></script> -->
-
-
+	<script src="/models/user.js"></script>
 	<script src="/components/block/block.js"></script>
 	<script src="/components/button/button.js"></script>
 	<script src="/components/form/form.tmpl.js"></script>
@@ -44,6 +49,7 @@
 
 
 	<script src="/views/mainView.js"></script>
+	<script src="/views/gameView.js"></script>
 	<script src="/views/loginView.js"></script>
 	<script src="/views/registView.js"></script>
 	<script src="/views/menuView.js"></script>

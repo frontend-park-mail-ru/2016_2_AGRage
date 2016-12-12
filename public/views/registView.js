@@ -4,11 +4,12 @@
 	const Button = window.Button;
 	const View = window.View;
 	const Form = window.Form;
-
+	const Model = window.Model;
 	class registerView extends View {
 		constructor(options = {}) {
 			super(options);
 			this._el = document.querySelector('.js-regist');
+			this.sender = new User();
 			this.createElements();
 			this.addElements();
 			this.addListeners();
@@ -20,28 +21,33 @@
 				el: document.createElement('div'),
 				data: {
 					title: 'AGRage',
+					titleClass: "title",
 					fields: [{
-						name: 'user',
+						name: 'login',
 						type: 'text',
 						placeholder: "Введите ваш логин",
 						maxlength: "25",
 						minlength: "5",
-						required: "required"
+						required: "required",
+						class: "form"
 					}, {
 						name: 'email',
 						type: 'email',
 						placeholder: "Введите ваш email",
-						required: "required"
+						required: "required",
+						class: "form"
 					}, {
 						name: 'password',
 						type: 'password',
 						placeholder: "Веедите ваш пароль",
 						maxlength: "25",
 						minlength: "6",
-						required: "required"
+						required: "required",
+						class: "form"
 					}],
 					controls: [{
 						text: 'Зарегистрироваться',
+						class: "loginButton",
 						attrs: {
 							type: 'submit'
 						}
@@ -56,10 +62,30 @@
 
 		addListeners() {
 			this.registForm._get().addEventListener('submit', event => {
-				console.log('click regist');
-				this.router.go('/menu');
+				event.preventDefault();
+				let data = this.registForm.getFormData();
+				this.sender = new User(data);
+				if(this.validation(data)){
+					//this.sender.sendRequest('/registration/', 'POST', JSON.stringify(data))
+					this.sender.registration()
+						.then((responseObj) => {
+							if (responseObj.status == 200){
+	                        	this.sender.isAuth = 1;
+	                        	this.router.go('/menu');
+							}
+	                    })
+						.catch(() => {
+							 alert('Неправильные ты, дядя Федор, данные вводишь!');
+						})
+				}
+				else {
+					alert('Неправильные ты, дядя Федор, данные вводишь!');
+				}
 			});
+		}
 
+		validation(data){
+			return true;
 		}
 	}
 

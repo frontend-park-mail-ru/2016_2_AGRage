@@ -4,6 +4,9 @@
 	const Button = window.Button;
 	const View = window.View;
 	const Form = window.Form;
+	const Model = window.Model;
+	const User = window.User;
+
 
 	class loginView extends View {
 		constructor(options = {}) {
@@ -20,23 +23,27 @@
 				el: document.createElement('div'),
 				data: {
 					title: 'AGRage',
+					titleClass: "title",
 					fields: [{
 						name: 'login',
 						type: 'text',
 						placeholder: "Enter your login",
 						maxlength: "25",
 						minlength: "5",
-						required: "required"
+						required: "required",
+						class: "form"
 					}, {
 						name: 'password',
 						type: 'password',
 						placeholder: "Enter your password",
 						maxlength: "25",
 						minlength: "5",
-						required: "required"
+						required: "required",
+						class: "form"
 					}],
 					controls: [{
 						text: 'Войти',
+						class: "loginButton",
 						attrs: {
 							type: 'submit'
 						}
@@ -51,10 +58,31 @@
 
 		addListeners() {
 			this.loginForm._get().addEventListener('submit', event => {
-				console.log('click login');
-				this.router.go('/menu');
+				event.preventDefault();
+				let data = this.loginForm.getFormData();
+				this.sender = new User(data);
+				if (this.validation(data)) {
+					//this.sender.autentification();
+					//this.sender.sendRequest('/login', 'POST', JSON.stringify(data))
+					this.sender.autentification()
+						.then((responseObj) => {
+							if (responseObj.status == 200) {
+								this.sender.isAuth = 1;
+								this.router.go('/menu');
+							}
+						})
+						.catch(() => {
+								alert('Неправильные ты, дядя Федор, данные вводишь!');
+						})
+				} else {
+					alert('Неправильные ты, дядя Федор, данные вводишь!');
+				}
 			});
 
+		}
+
+		validation(data) {
+			return true;
 		}
 	}
 

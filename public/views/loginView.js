@@ -16,7 +16,6 @@
 			this.addElements();
 			this.addListeners();
 			this.hide();
-
 		}
 
 		createElements() {

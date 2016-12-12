@@ -31,7 +31,4 @@
 		.addRoute('/', mainView)
 
 		.start();
-
-	//dfffff
-
 })();

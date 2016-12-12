@@ -9,7 +9,7 @@
 			})
 			this.attributes = Object.assign({}, this.defaults, attributes);
 		}
-<<<<<<< HEAD
+
 
 		get defaults() {
 			return {};
